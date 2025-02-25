@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+.slider {
+  height: 10px;
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Styles for the slider thumb */
+.slider .thumb {
+  height: 17px;
+  width: 17px;
+  bottom: -4px;
+  border-radius: 50%;
+  background-color: #007bff;
+  cursor: grab;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for the slider active state */
+.slider .thumb.active {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+input.chk-btn + label:active,
+input.chk-btn:checked + label {
+  background-color: orange;
+  color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
