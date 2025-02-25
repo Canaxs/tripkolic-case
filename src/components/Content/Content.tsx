@@ -14,7 +14,7 @@ export default function Content(props: any) {
             }
             <div className="flex flex-wrap justify-center gap-3">
                 {props.travelDataState?.map((data: any) => (
-                    <div className="basis-[20%] rounded-xl" key={"dd"+Math.random()}>
+                    <div className="basis-[20%] max-xl:basis-[30%] max-md:basis-[47%] max-sm:basis-[95%] rounded-xl" key={"dd"+Math.random()}>
                         <Card data={data} />
                     </div>
                 ))}

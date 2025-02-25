@@ -105,7 +105,7 @@ export default function Modal(props:any) {
     return (
         <div id="modal" className="absolute w-full h-full flex items-center justify-center z-50">
             <div className="w-full h-full bg-black opacity-30"></div>
-                <motion.div className="w-[30%] h-[800px] bg-white shadow-lg z-20 rounded-2xl absolute top-5 cursor-pointer"
+                <motion.div className="w-[30%] max-xl:w-[60%] max-sm:w-[90%] h-[800px] bg-white shadow-lg z-20 rounded-2xl absolute top-5 cursor-pointer"
                     initial={{ opacity: 0, y: 12 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.125 }}>
