@@ -30,8 +30,8 @@ export default function Modal(props) {
     } , [selectCategory])
 
     function filterData() {
-        let vData = travelDataState.filter((data: any) => data.category === selectCategory);
-        let vThema = vData.reduce((acc, v, i) => {
+        const vData = travelDataState.filter((data: any) => data.category === selectCategory);
+        const vThema = vData.reduce((acc, v) => {
             let theme = acc.find((item) => item.theme == v.theme)
             if (!theme) {
                 theme = {theme: v.theme}
@@ -41,7 +41,7 @@ export default function Modal(props) {
         }, [])
         setBringSameThema(vThema);
         //
-        let vActivity = vData.reduce((acc, v, i) => {
+        const vActivity = vData.reduce((acc, v) => {
             let activity = acc.find((item) => item.activity == v.activity)
             if (!activity) {
                 activity = {activity: v.activity}
@@ -55,7 +55,7 @@ export default function Modal(props) {
 
     function addThema(theme: string) {
         if(onClickSameThema.some(e => e === theme)) {
-            let vThema = onClickSameThema.filter(e => e != theme);
+            const vThema = onClickSameThema.filter(e => e != theme);
             setOnClickSameThema(vThema);
         }
         else {
@@ -86,7 +86,7 @@ export default function Modal(props) {
     }
 
     function applyFilter() {
-        let vData = travelDataState.filter((data: any) => data.category === selectCategory);
+        var vData = travelDataState.filter((data: any) => data.category === selectCategory);
         if(onClickSameThema.length > 0) {
             vData = vData.filter((data: any) =>  onClickSameThema.includes(data.theme));
         }
