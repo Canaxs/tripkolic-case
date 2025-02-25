@@ -86,7 +86,7 @@ export default function Modal(props) {
     }
 
     function applyFilter() {
-        var vData = travelDataState.filter((data: any) => data.category === selectCategory);
+        let vData = travelDataState.filter((data: any) => data.category === selectCategory);
         if(onClickSameThema.length > 0) {
             vData = vData.filter((data: any) =>  onClickSameThema.includes(data.theme));
         }
