@@ -1,9 +1,8 @@
-import { randomUUID } from "crypto";
 import Card from "../Card/Card";
 import { LuSearchCheck } from "react-icons/lu";
 
 
-export default function Content(props: any) {
+export default function Content(props) {
     return (
         <div className="mt-10 w-full h-full">
             {props.wasRunFilter && 
@@ -13,8 +12,8 @@ export default function Content(props: any) {
                 </div>
             }
             <div className="flex flex-wrap justify-center gap-3">
-                {props.travelDataState?.map((data: any) => (
-                    <div className="basis-[20%] max-xl:basis-[30%] max-md:basis-[47%] max-sm:basis-[95%] rounded-xl" key={"dd"+Math.random()}>
+                {props.travelDataState?.map((data,index) => (
+                    <div className="basis-[20%] max-xl:basis-[30%] max-md:basis-[47%] max-sm:basis-[95%] rounded-xl" key={"dd"+index}>
                         <Card data={data} />
                     </div>
                 ))}

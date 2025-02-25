@@ -4,7 +4,7 @@ import { MdFavoriteBorder } from "react-icons/md";
 import { GoArrowRight } from "react-icons/go";
 
 
-export default function Card(props: any) {
+export default function Card(props) {
     return (
         <div className="w-full h-full shadow-xl flex flex-col cursor-pointer hover:shadow-gray-500 transition-all rounded-xl">
             <div className="relative">

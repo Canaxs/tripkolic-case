@@ -1,12 +1,11 @@
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { IoMdClose } from "react-icons/io";
-import ReactSlider from 'react-slider'
 import Slider from 'react-slider';
 
-export default function Modal(props:any) {
+export default function Modal(props) {
 
-    let { travelDataState , setTravelDataState} = props;
+    const { travelDataState , setTravelDataState} = props;
 
     const [price , setPrice] = useState([0,25000]);
 

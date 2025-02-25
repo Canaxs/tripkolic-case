@@ -2,12 +2,11 @@ import { CgMenuLeftAlt } from "react-icons/cg";
 import { TbWorld } from "react-icons/tb";
 import { MdFavoriteBorder } from "react-icons/md";
 import { PiBasketLight } from "react-icons/pi";
-import { useEffect, useState } from "react";
 import Modal from "../Modal/Modal";
 
-export default function Header(props: any) { 
+export default function Header(props) { 
 
-    let {modal , setModal} = props
+    const {modal , setModal} = props
 
     return (
         <div className="w-full h-full">
