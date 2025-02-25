@@ -19,7 +19,7 @@ export default function Header(props) {
                     <span className="text-base drop-shadow shadow-black  text-gray-700 max-md:text-sm">Filter</span>
                 </div>
                 <div className="z-10">
-                    <img src="logo.png" className="w-12 h-12 max-md:h-10 max-md:w-10"/>
+                    <img src="logo.PNG" className="w-10 h-12 max-md:h-10 max-md:w-8"/>
                 </div>
                 <div className="flex gap-2 items-center max-md:gap-1 z-10">
                     <TbWorld className="size-7 text-gray-500 max-md:size-5 cursor-pointer transition-all hover:text-blue-500"/>
